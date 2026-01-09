@@ -75,36 +75,30 @@ format:
 
 # inSileco Academy
 
-## System thinking 
+## Autonomous courses 
+
+- Example: Ecological modules for student
+- Example: Reproducible research
+
+## Coaching 
+
+- Example: Grant Applications for PIs
+- Example: Create your first R package
+
+
+## Projects 
+
+### System thinking 
 
 - Todo: draft app 
 
+### Summer School
 
-## Summer School
-
-:::: {.columns}
-
-::: {.callout-tip }
-### TIP
-:::
-
-::: {.column width="60%"}
-### COL
-- Powerful 
-- Cool
-:::
-
-::: {.column width="40%"}
-COOL
-:::
-
-:::: 
-
-:::footer 
-EXAMPLE
-:::
+- This year?
 
 
+
+# inSileco Intelligence 
 
 # Ecosystem-based Management / Environmental intelligence
 
