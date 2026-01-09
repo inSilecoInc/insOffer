@@ -1,6 +1,6 @@
 ---
-title: "inSileco Offer"
-author: "inSileco"
+title: "Mc inSileco"
+author: "McCann + inSileco"
 from: markdown+emoji
 format: 
   revealjs:
@@ -19,7 +19,57 @@ format:
 ---
 
 
-# inSileco Structure 
+## Agenda 
+
+- inSileco Offer (5min)
+- inSileco Systems (1min)
+- inSileco Academy (30min)
+- inSileco Intelligence (30min)
+- Discussions/Next steps
+
+
+# inSileco Offer
+
+## Mission statement
+
+> We operationalize environmental management by building the capacity, tools, and systems that environmental professionals and organizations need to work confidently and efficiently.
+
+
+## Entities 
+
+- **inSileco Blog** — Open insights on environmental management and new technologies
+- **inSileco Academy** — Capacity building for environmental professionals
+- **inSileco Systems** — Build and transfer operational data and modeling systems.
+- **inSileco Intelligence** — Deliver decision-ready environmental risk assessments.
+
+
+## Offer
+
+#### DIY: Do it Yourself 
+
+- inSileco Blog: free content 
+- inSileco Academy: Autonomous courses
+
+#### DWY: Do it With You 
+
+- inSileco Academy: Workshops + Coaching
+
+#### DFY: Do it For You 
+
+- inSileco Systems: Contracts
+- inSileco Intelligence: Subscriptions
+
+
+
+# inSileco Systems
+
+## We build system for you
+
+- Custom data solutions
+  - consulting
+  - R packages 
+  - Shiny Apps
+
 
 
 
@@ -54,3 +104,16 @@ COOL
 EXAMPLE
 :::
 
+
+
+# Ecosystem-based Management / Environmental intelligence
+
+## CEA in the Gret Lakes 
+
+## Protray of biodiversity 
+
+## inSileco Plateform
+
+
+
+# Next Steps
