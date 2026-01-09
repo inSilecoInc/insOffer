@@ -37,10 +37,21 @@ format:
 
 ## Entities 
 
+### Description
+
 - **inSileco Blog** — Open insights on environmental management and new technologies
 - **inSileco Academy** — Capacity building for environmental professionals
 - **inSileco Systems** — Build and transfer operational data and modeling systems.
 - **inSileco Intelligence** — Deliver decision-ready environmental risk assessments.
+
+## Entities
+
+### Purpose
+
+- **inSileco Blog** - Leads Generator
+- **inSileco Academy** — Leads Generator + income flow
+- **inSileco Systems** — Income flow
+- **inSileco Intelligence** — Revenue generator
 
 
 ## Offer
@@ -58,6 +69,34 @@ format:
 
 - inSileco Systems: Contracts
 - inSileco Intelligence: Subscriptions
+
+# Offers example 
+
+## inSileco Academy 
+
+- Intro workshop/coaching (DWY)
+  - Become vastly more efficient by  Integrating AI and reproductibility in your professional life as an environmental professional 
+  - 10-20 person monthly cohort
+  - half day workshop
+  - 4x 1h follow-up targeted events
+  - 5h support post-workshop (usable within 3 months)
+
+## inSileco Academy
+
+- Specialized workshop (DWY)
+  - Bring your own project to develop R packages, Shiny applications, integrated datasets, etc. 
+  - 2 days workshop
+  - bring your own project 
+  - intro workshop completed |(50% discount on it)
+  - 10h post-workshop support (usable within 6 months)
+
+## inSileco Systems
+
+- From academy to systems (DWY -> DFY)
+  - We complete the project your began in your specialized workshop
+  - <20k$ -> 25% credit on workshop
+  - 20k$ - 50k$ -> 50% credit on workshop
+  - over 50k$ -> 100% credit on workshop
 
 
 

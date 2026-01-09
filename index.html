@@ -6,8 +6,8 @@
 <script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.8.26">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.31">
 
   <meta name="author" content="McCann + inSileco">
   <title>Mc inSileco</title>
@@ -29,7 +29,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-f1376d11060272321dd1129bb042e933.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-c4e4f9f929ca940a2f664cf23af93834.css">
   <link rel="stylesheet" href="styles.css">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -164,11 +164,22 @@ McCann + inSileco
 </section>
 <section id="entities" class="slide level2">
 <h2>Entities</h2>
+<h3 id="description">Description</h3>
 <ul>
 <li><strong>inSileco Blog</strong> — Open insights on environmental management and new technologies</li>
 <li><strong>inSileco Academy</strong> — Capacity building for environmental professionals</li>
 <li><strong>inSileco Systems</strong> — Build and transfer operational data and modeling systems.</li>
 <li><strong>inSileco Intelligence</strong> — Deliver decision-ready environmental risk assessments.</li>
+</ul>
+</section>
+<section id="entities-1" class="slide level2">
+<h2>Entities</h2>
+<h3 id="purpose">Purpose</h3>
+<ul>
+<li><strong>inSileco Blog</strong> - Leads Generator</li>
+<li><strong>inSileco Academy</strong> — Leads Generator + income flow</li>
+<li><strong>inSileco Systems</strong> — Income flow</li>
+<li><strong>inSileco Intelligence</strong> — Revenue generator</li>
 </ul>
 </section>
 <section id="offer" class="slide level2">
@@ -189,7 +200,50 @@ McCann + inSileco
 </ul>
 </section></section>
 <section>
-<section id="insileco-systems" class="title-slide slide level1 center">
+<section id="offers-example" class="title-slide slide level1 center">
+<h1>Offers example</h1>
+
+</section>
+<section id="insileco-academy" class="slide level2">
+<h2>inSileco Academy</h2>
+<ul>
+<li>Intro workshop/coaching (DWY)
+<ul>
+<li>Become vastly more efficient by Integrating AI and reproductibility in your professional life as an environmental professional</li>
+<li>10-20 person monthly cohort</li>
+<li>half day workshop</li>
+<li>4x 1h follow-up targeted events</li>
+<li>5h support post-workshop (usable within 3 months)</li>
+</ul></li>
+</ul>
+</section>
+<section id="insileco-academy-1" class="slide level2">
+<h2>inSileco Academy</h2>
+<ul>
+<li>Specialized workshop (DWY)
+<ul>
+<li>Bring your own project to develop R packages, Shiny applications, integrated datasets, etc.</li>
+<li>2 days workshop</li>
+<li>bring your own project</li>
+<li>intro workshop completed |(50% discount on it)</li>
+<li>10h post-workshop support (usable within 6 months)</li>
+</ul></li>
+</ul>
+</section>
+<section id="insileco-systems" class="slide level2">
+<h2>inSileco Systems</h2>
+<ul>
+<li>From academy to systems (DWY -&gt; DFY)
+<ul>
+<li>We complete the project your began in your specialized workshop</li>
+<li>&lt;20k$ -&gt; 25% credit on workshop</li>
+<li>20k$ - 50k$ -&gt; 50% credit on workshop</li>
+<li>over 50k$ -&gt; 100% credit on workshop</li>
+</ul></li>
+</ul>
+</section></section>
+<section>
+<section id="insileco-systems-1" class="title-slide slide level1 center">
 <h1>inSileco Systems</h1>
 
 </section>
@@ -205,7 +259,7 @@ McCann + inSileco
 </ul>
 </section></section>
 <section>
-<section id="insileco-academy" class="title-slide slide level1 center">
+<section id="insileco-academy-2" class="title-slide slide level1 center">
 <h1>inSileco Academy</h1>
 
 </section>
@@ -450,7 +504,7 @@ McCann + inSileco
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -524,14 +578,13 @@ McCann + inSileco
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-          const outerScaffold = trigger.parentElement.cloneNode(true);
-          const codeEl = outerScaffold.querySelector('code');
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
             }
-          }
-          return codeEl.innerText;
+            return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy
