@@ -6,8 +6,8 @@
 <script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.31">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.26">
 
   <meta name="author" content="McCann + inSileco">
   <title>Mc inSileco</title>
@@ -29,7 +29,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-c4e4f9f929ca940a2f664cf23af93834.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-f1376d11060272321dd1129bb042e933.css">
   <link rel="stylesheet" href="styles.css">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -263,53 +263,34 @@ McCann + inSileco
 <h1>inSileco Academy</h1>
 
 </section>
-<section id="system-thinking" class="slide level2">
-<h2>System thinking</h2>
+<section id="autonomous-courses" class="slide level2">
+<h2>Autonomous courses</h2>
+<ul>
+<li>Example: Ecological modules for student</li>
+<li>Example: Reproducible research</li>
+</ul>
+</section>
+<section id="coaching" class="slide level2">
+<h2>Coaching</h2>
+<ul>
+<li>Example: Grant Applications for PIs</li>
+<li>Example: Create your first R package</li>
+</ul>
+</section>
+<section id="projects" class="slide level2">
+<h2>Projects</h2>
+<h3 id="system-thinking">System thinking</h3>
 <ul>
 <li>Todo: draft app</li>
 </ul>
-</section>
-<section id="summer-school" class="slide level2">
-<h2>Summer School</h2>
-<div class="columns">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>TIP</strong></p>
-</div>
-<div class="callout-content">
-
-</div>
-</div>
-</div><div class="column" style="width:60%;">
-<h3 id="col">COL</h3>
+<h3 id="summer-school">Summer School</h3>
 <ul>
-<li>Powerful</li>
-<li>Cool</li>
+<li>This year?</li>
 </ul>
-</div><div class="column" style="width:40%;">
-<p>COOL</p>
-</div></div>
-<div class="footer">
-<p>EXAMPLE</p>
-</div>
-</section></section>
-<section>
-<section id="ecosystem-based-management-environmental-intelligence" class="title-slide slide level1 center">
-<h1>Ecosystem-based Management / Environmental intelligence</h1>
-
 </section>
-<section id="cea-in-the-gret-lakes" class="slide level2">
-<h2>CEA in the Gret Lakes</h2>
-</section>
-<section id="protray-of-biodiversity" class="slide level2">
-<h2>Protray of biodiversity</h2>
-</section>
-<section id="insileco-plateform" class="slide level2">
-<h2>inSileco Plateform</h2>
+<section id="insileco-intelligence" class="slide level2">
+<h2>inSileco Intelligence</h2>
+<p><a href="img/intel.png"><img data-src="img/intel.png" style="width:110.0%"></a></p>
 </section></section>
 <section id="next-steps" class="title-slide slide level1 center">
 <h1>Next Steps</h1>
@@ -504,7 +485,7 @@ McCann + inSileco
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -578,13 +559,14 @@ McCann + inSileco
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-            const codeEl = trigger.previousElementSibling.cloneNode(true);
-            for (const childEl of codeEl.children) {
-              if (isCodeAnnotation(childEl)) {
-                childEl.remove();
-              }
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
             }
-            return codeEl.innerText;
+          }
+          return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy

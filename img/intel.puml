@@ -1,0 +1,51 @@
+@startuml
+left to right direction
+skinparam shadowing false
+skinparam roundcorner 8
+skinparam componentStyle rectangle
+
+rectangle "DATA LAKE" as DL
+rectangle "ASSESSMENT" as AS
+rectangle "OUTPUTS" as OUT
+rectangle "PLATFORM\ninSileCloud" as PL
+
+rectangle "EXTERNAL DATA" as EXT
+rectangle "DATA COLLECTION" as DC
+
+rectangle "Clients" as CL
+rectangle "pilot project?" as PILOT
+
+EXT --> DL
+DC  --> DL
+
+DL --> AS
+AS --> OUT
+OUT --> PL
+
+' feedback loop (outputs -> data lake)
+OUT -up-> DL : feedback / iteration
+
+note right of AS
+- Cum. effects
+- Biodiv. monitoring
+- TW
+- etc.
+end note
+
+note right of PL
+- Data
+- reports
+- Specific Apps
+end note
+
+note right of CL
+- GLIFC
+- Municipalities
+- CAs
+- Prov. G
+- Feds.
+end note
+
+CL --> PILOT
+
+@enduml

@@ -137,15 +137,9 @@ format:
 
 
 
-# inSileco Intelligence 
+## inSileco Intelligence 
 
-# Ecosystem-based Management / Environmental intelligence
-
-## CEA in the Gret Lakes 
-
-## Protray of biodiversity 
-
-## inSileco Plateform
+[![](img/intel.png){width=110%}](img/intel.png)
 
 
 
