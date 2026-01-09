@@ -1,0 +1,56 @@
+---
+title: "inSileco Offer"
+author: "inSileco"
+from: markdown+emoji
+format: 
+  revealjs:
+    theme: [default, custom.scss]
+    slide-number: true
+    transition: fade
+    css: styles.css
+    incremental: false
+    toc: false
+    toc-depth: 2
+    include-in-header:
+      - text: |
+          <!-- Font Awesome 6 -->
+          <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+---
+
+
+# inSileco Structure 
+
+
+
+# inSileco Academy
+
+## System thinking 
+
+- Todo: draft app 
+
+
+## Summer School
+
+:::: {.columns}
+
+::: {.callout-tip }
+### TIP
+:::
+
+::: {.column width="60%"}
+### COL
+- Powerful 
+- Cool
+:::
+
+::: {.column width="40%"}
+COOL
+:::
+
+:::: 
+
+:::footer 
+EXAMPLE
+:::
+
